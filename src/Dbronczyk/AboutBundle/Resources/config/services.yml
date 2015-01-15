@@ -1,0 +1,4 @@
+services:
+#    dbronczyk_about.example:
+#        class: Dbronczyk\AboutBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

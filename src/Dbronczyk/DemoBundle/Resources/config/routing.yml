@@ -1,0 +1,23 @@
+dbronczyk_demo_questionnarie:
+    resource: "@DbronczykDemoBundle/Resources/config/routing/questionnarie.yml"
+    prefix:   /questionnarie
+
+dbronczyk_demo_homepage:
+    path:     /
+    defaults:
+        _controller: DbronczykDemoBundle:Default:index
+
+dbronczyk_about_homepage:
+    path:     /about
+    defaults:
+        _controller: DbronczykDemoBundle:Default:about
+
+dbronczyk_contact_homepage:
+    path:     /contact
+    defaults:
+        _controller: DbronczykDemoBundle:Default:contact
+
+dbronczyk_feeds_index:
+    path: /feeds
+    defaults:
+        _controller: DbronczykDemoBundle:Overview:index

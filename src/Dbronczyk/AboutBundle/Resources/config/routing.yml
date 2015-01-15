@@ -1,0 +1,3 @@
+dbronczyk_about_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: DbronczykAboutBundle:Default:index }

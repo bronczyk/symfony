@@ -1,0 +1,34 @@
+questionnarie:
+    path:     /
+    defaults: { _controller: "DbronczykDemoBundle:Questionnarie:index" }
+
+questionnarie_show:
+    path:     /{id}/show
+    defaults: { _controller: "DbronczykDemoBundle:Questionnarie:show" }
+
+questionnarie_show_by_lastname:
+    path:     /{lastname}/show
+    defaults: { _controller: "DbronczykDemoBundle:Questionnarie:showByLastname" }
+
+questionnarie_new:
+    path:     /new
+    defaults: { _controller: "DbronczykDemoBundle:Questionnarie:new" }
+
+questionnarie_create:
+    path:     /create
+    defaults: { _controller: "DbronczykDemoBundle:Questionnarie:create" }
+    requirements: { _method: post }
+
+questionnarie_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "DbronczykDemoBundle:Questionnarie:edit" }
+
+questionnarie_update:
+    path:     /{id}/update
+    defaults: { _controller: "DbronczykDemoBundle:Questionnarie:update" }
+    requirements: { _method: post|put }
+
+questionnarie_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "DbronczykDemoBundle:Questionnarie:delete" }
+    requirements: { _method: post|delete }

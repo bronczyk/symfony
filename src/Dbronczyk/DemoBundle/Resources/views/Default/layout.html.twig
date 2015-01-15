@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="Damian Brończyk">
+	
+    <!-- Latest compiled and minified CSS -->
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+    rel="stylesheet"><!-- Optional theme -->
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"
+    rel="stylesheet"><!-- Latest compiled and minified JavaScript -->
+
+    <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <title>Hello World Twig</title>
+</head>
+
+<body style="padding-top: 70px;">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target=
+                "#bs-example-navbar-collapse-1" data-toggle="collapse" type=
+                "button"><span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span></button> <a class="navbar-brand"
+                href="#">Shaggy's website</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+                    {% block navigation %}
+                {#   <li><a href="{{ path('/about') }}">About</a></li> #}
+				 
+                    <li><a href="/about">About</a></li>
+                   {% endblock %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+
+    <footer>
+        {% block footer %}
+	<footer>
+	<div class="container">
+	<hr>
+		<p class="pull-right">
+			<a href="#">Back to top</a>
+		</p>
+		<p class="text-muted">Damian Brończyk	&copy; Copyright 2014		</p>
+	</div>
+	</footer>
+ {% endblock %}
+    </footer>
+	
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</body>
+</html>

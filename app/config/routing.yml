@@ -1,0 +1,8 @@
+dbronczyk_about:
+    resource: "@DbronczykAboutBundle/Resources/config/routing.yml"
+    prefix:   /
+
+dbronczyk_demo:
+    resource: "@DbronczykDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
